@@ -10,7 +10,7 @@ require("@rails/activestorage").start()
 require("local-time").start()
 require("@rails/ujs").start()
 
-import './channels/**/*_channel.js'
+import './channels/**/*_channel.js.js.js.js.js'
 import "./controllers"
 
 import 'bootstrap'
@@ -25,5 +25,7 @@ document.addEventListener("turbo:load", () => {
     return new bootstrap.Popover(popoverTriggerEl)
   })
 })
-import './channels/**/*_channel.js'
+import './channels/**/*_channel.js.js.js.js.js'
 import * as bootstrap from "bootstrap"
+import "trix"
+import "@rails/actiontext"
