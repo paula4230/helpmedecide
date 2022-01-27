@@ -1,2 +1,7 @@
-<h1>Welcome to Jumpstart!</h1>
-<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<% if user_signed_in? %>
+    <h1>Welcome, <%= current_user.first_name %></h1>
+    <p class="lead">We're giving you daily meal suggestions.</p>
+<% else %>
+    <h1>"I don't know what to eat, help!"</h1>
+    <p class="lead">We understand that sometimes, choosing your meals may be fatiguing. If you're not on a strict diet and would like some random suggestions, we'll help you decide.</p>
+<% end %>
